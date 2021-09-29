@@ -1,0 +1,33 @@
+### Cadastrar livro
+POST https://localhost:5001/api/livro/create
+Content-Type: application/json
+
+{
+    "Nome" : "Bolacha",
+    "Preco" : 3.5,
+    "Quantidade" : 1,
+    "Descricao" : "Testatandinho"
+
+
+
+
+}
+
+### Listar livros
+GET https://localhost:5001/api/livro/list
+
+### Buscar livro pelo id
+GET https://localhost:5001/api/livro/getbyid/1
+
+### Deletar livro pelo nome
+DELETE https://localhost:5001/api/livro/delete/Bolacha
+
+### Alterar o livro inteiro
+PUT https://localhost:5001/api/livro/update
+Content-Type: application/json
+
+{
+
+    "Nome" : "Bolacha 1234",
+    "Preco" : 3.5
+}
